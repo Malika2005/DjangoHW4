@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Payment Status</title>
+</head>
+<body>
+  {% for customer in customers %}
+    <p>Name: {{ customer.name }} - Age: {{ customer.age }} - Group: {{customer.gym_group}} - Is paid: {{customer.payment_status}}</p>
+{% endfor %}
+</body>
+</html>
